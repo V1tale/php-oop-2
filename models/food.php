@@ -4,11 +4,11 @@ class food extends product
 {
     public $quantity;
     public $nutritionalValues;
-    public $expireDate;
+    public $expirationDate;
 
-    public function __construct($name, $picture, $price,  $available, string $quantity, string $nutritionalValues, string $expirationDate)
+    public function __construct($name, $picture, $price,  $available, $category, string $quantity, string $nutritionalValues, string $expirationDate)
     {
-        parent::__construct($name, $picture, $price,  $available);
+        parent::__construct($name, $picture, $price,  $available, $category);
         $this->quantity = $quantity;
         $this->nutritionalValues = $nutritionalValues;
         $this->expirationDate = $expirationDate;

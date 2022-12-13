@@ -6,9 +6,9 @@ class toy extends product
     public $weight;
     public $chewable;
 
-    public function __construct($name, $picture, $price,  $available, string $color, float $weight, string $chewable)
+    public function __construct($name, $picture, $price,  $available, $category, string $color, float $weight, string $chewable)
     {
-        parent::__construct($name, $picture, $price,  $available);
+        parent::__construct($name, $picture, $price,  $available, $category);
         $this->color = $color;
         $this->weight = $weight;
         $this->chewable = $chewable;
